@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+  sig-casino:
+    build: .
+    container_name: sig-casino
+    restart: always
+    ports:
+      - "4000:4000"
+    env_file:
+      - .env
+    volumes:
+      - ./data:/app/data

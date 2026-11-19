@@ -1,0 +1,26 @@
+# Environment & Secrets (NEVER commit real secrets to GitHub)
+.env
+.env.local
+.env.production
+
+# SQLite WAL Live Databases
+data/*.db-wal
+data/*.db-shm
+*.db-wal
+*.db-shm
+
+# Python Bytecode & Virtual Environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# OS & Editor Files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Private KYC Document Storage Vault
+data/kyc_vault/
